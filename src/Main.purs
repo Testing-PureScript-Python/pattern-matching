@@ -7,14 +7,10 @@ data Nat
   | Succ Nat   -- succ 0 -> 1; succ 2 -> 3
 
 natToInt :: Nat -> Int
--- showNat _3 == "3"
--- showNat Zero == 0
 natToInt Zero = 0
 natToInt (Succ a) = 1 `iadd` natToInt a
 
 natToIntRecImpl :: Int -> Nat -> Int
--- showNat _3 == "3"
--- showNat Zero == 0
 natToIntRecImpl a Zero = a
 natToIntRecImpl r (Succ a) = natToIntRecImpl (1 `iadd` r) a
 

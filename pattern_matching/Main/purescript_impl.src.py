@@ -32,20 +32,20 @@ res = block( "No document"
                                 , block( assign_star( "ps_v"
                                                     , define( None
                                                             , ["ps_v1"]
-                                                            , block( ret( metadata( 36
+                                                            , block( ret( metadata( 32
                                                                                   , 12
                                                                                   , joinpath( project_path
                                                                                   , "src\\Main.purs" )
                                                                                   , True ) ) ) ) )
                                        , ite( isa(var("ps_n"), var("ps_Succ"))
-                                            , block( ret( metadata( 35
+                                            , block( ret( metadata( 31
                                                                   , 19
                                                                   , joinpath( project_path
                                                                   , "src\\Main.purs" )
                                                                   , False ) ) )
                                             , None )
                                        , ret( call( var("ps_v")
-                                                  , metadata( 34
+                                                  , metadata( 30
                                                             , 1
                                                             , joinpath( project_path
                                                             , "src\\Main.purs" )
@@ -75,7 +75,7 @@ res = block( "No document"
                                                                                , block( assign( "ps_$tco_var_v"
                                                                                               , call( call( get_item( var( "ps_SmallPrelude" )
                                                                                                                     , "iadd" )
-                                                                                                          , metadata( 19
+                                                                                                          , metadata( 15
                                                                                                                     , 47
                                                                                                                     , joinpath( project_path
                                                                                                                     , "src\\Main.purs" )
@@ -87,7 +87,7 @@ res = block( "No document"
                                                                                       , ret(None) )
                                                                                , None )
                                                                           , throw( new( var( "ps_Error" )
-                                                                                      , binop( "Failed pattern match at pattern_matching.Main.purescript_impl (line 15, column 1 - line 15, column 37): "
+                                                                                      , binop( "Failed pattern match at pattern_matching.Main.purescript_impl (line 13, column 1 - line 13, column 37): "
                                                                                              , BinOp.ADD
                                                                                              , mktuple( get_attr( get_item( var( "ps_v" )
                                                                                                                           , ".t" )
@@ -104,7 +104,7 @@ res = block( "No document"
                                                            , ret( var( "ps_$tco_result" ) ) ) ) ) ) ) )
            , assign_star( "ps_natToIntRec"
                         , call( var("ps_natToIntRecImpl")
-                              , metadata( 21
+                              , metadata( 17
                                         , 31
                                         , joinpath( project_path
                                         , "src\\Main.purs" )
@@ -113,7 +113,7 @@ res = block( "No document"
                         , define( None
                                 , ["ps_v"]
                                 , block( ite( isa(var("ps_v"), var("ps_Zero"))
-                                            , block( ret( metadata( 12
+                                            , block( ret( metadata( 10
                                                                   , 17
                                                                   , joinpath( project_path
                                                                   , "src\\Main.purs" )
@@ -122,7 +122,7 @@ res = block( "No document"
                                        , ite( isa(var("ps_v"), var("ps_Succ"))
                                             , block( ret( call( call( get_item( var( "ps_SmallPrelude" )
                                                                               , "iadd" )
-                                                                    , metadata( 13
+                                                                    , metadata( 11
                                                                               , 21
                                                                               , joinpath( project_path
                                                                               , "src\\Main.purs" )
@@ -167,7 +167,7 @@ res = block( "No document"
                                                                                               , var( "ps_v" ) )
                                                                                         , call( get_item( var( "ps_SmallPrelude" )
                                                                                                         , "negate" )
-                                                                                              , metadata( 25
+                                                                                              , metadata( 21
                                                                                                         , 59
                                                                                                         , joinpath( project_path
                                                                                                         , "src\\Main.purs" )
@@ -186,14 +186,14 @@ res = block( "No document"
                                 , block( ite( call( call( get_item( var( "ps_SmallPrelude" )
                                                                   , "igt" )
                                                         , var("ps_n") )
-                                                  , metadata( 28
+                                                  , metadata( 24
                                                             , 13
                                                             , joinpath( project_path
                                                             , "src\\Main.purs" )
                                                             , 0 ) )
                                             , block( ret( call( get_item( var( "ps_SmallPrelude" )
                                                                         , "error" )
-                                                              , metadata( 28
+                                                              , metadata( 24
                                                                         , 30
                                                                         , joinpath( project_path
                                                                         , "src\\Main.purs" )
@@ -232,7 +232,7 @@ res = block( "No document"
                                                                                                         , "println" )
                                                                                               , call( var( "ps_natToIntRec" )
                                                                                                     , call( var( "ps_intToNatRec" )
-                                                                                                          , metadata( 42
+                                                                                                          , metadata( 38
                                                                                                                     , 37
                                                                                                                     , joinpath( project_path
                                                                                                                     , "src\\Main.purs" )

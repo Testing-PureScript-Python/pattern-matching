@@ -40,7 +40,7 @@ var natToIntRecImpl = function ($copy_v) {
                 $copy_v1 = v1.value0;
                 return;
             };
-            throw new Error("Failed pattern match at Main (line 15, column 1 - line 15, column 37): " + [ v.constructor.name, v1.constructor.name ]);
+            throw new Error("Failed pattern match at Main (line 13, column 1 - line 13, column 37): " + [ v.constructor.name, v1.constructor.name ]);
         };
         while (!$tco_done) {
             $tco_result = $tco_loop($tco_var_v, $copy_v1);
